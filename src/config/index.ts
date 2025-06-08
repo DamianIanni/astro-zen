@@ -130,7 +130,7 @@ export const SITE_CONTENT: SiteContent = {
       summary:
         "Mobile app for diabetes management. Enables users to log and track blood sugar levels, view monthly averages and daily trends via charts",
       linkGoogle:
-        "https://play.google.com/store/search?q=garnet+programer&c=apps&hl=es_AR",
+        "https://play.google.com/store/apps/details?id=com.GlucoTrack&hl=es_AR",
       image: "/GluckoTrack.png",
       linkSource: "https://github.com/DamianIanni/GlucoTrack",
     },
