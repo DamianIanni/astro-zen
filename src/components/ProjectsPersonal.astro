@@ -4,15 +4,15 @@ import { Image } from "astro:assets";
 import type { ProjectProps } from "@types";
 
 interface Props {
-  projects: ProjectProps[];
+  projectsPersonal: ProjectProps[];
 }
 
-const { projects } = Astro.props;
+const { projectsPersonal } = Astro.props;
 ---
 
-<Section text="Featured Projects" href="projects">
+<Section text="Personal Projects" href="projects">
   {
-    projects.map(
+    projectsPersonal.map(
       (
         {
           name,
@@ -37,37 +37,39 @@ const { projects } = Astro.props;
                   {name}
                 </h3>
                 <p class="text-base text-neutral">{summary}</p>
-                {linkApple && linkGoogle && (
+
+                <div class="flex gap-5 pt-10 text-white">
+                  {linkGoogle && (
+                    <a
+                      href={linkGoogle}
+                      target="_blank"
+                      class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
+                    >
+                      PlayStore
+                    </a>
+                  )}
+                  {linkSource && (
+                    <a
+                      href={linkSource}
+                      target="_blank"
+                      class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
+                    >
+                      Source
+                    </a>
+                  )}
+                </div>
+
+                {linkPreview && (
                   <div class="flex gap-5 pt-10 text-white">
-                    {linkGoogle && (
-                      <a
-                        href={linkGoogle}
-                        target="_blank"
-                        class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
-                      >
-                        PlayStore
-                      </a>
-                    )}
-                    {linkApple && (
-                      <a
-                        href={linkApple}
-                        target="_blank"
-                        class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
-                      >
-                        AppStore
-                      </a>
-                    )}
+                    <a
+                      href={linkPreview}
+                      target="_blank"
+                      class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
+                    >
+                      Preview
+                    </a>
                   </div>
                 )}
-                <div class="flex gap-5 pt-10 text-white">
-                  <a
-                    href={linkPreview}
-                    target="_blank"
-                    class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
-                  >
-                    Preview
-                  </a>
-                </div>
               </div>
               <div class="flex items-end justify-end overflow-hidden">
                 <Image
