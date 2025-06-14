@@ -114,16 +114,9 @@ export const SITE_CONTENT: SiteContent = {
         "Easily organize your luggage with Packing 76, the ultimate app to organize your suitcase efficiently and stress-free",
       linkPreview:
         "https://www.youtube.com/watch?v=HhdqjGm9ZZU&ab_channel=DamianIanni",
-      linkGoogle: "edit",
+      linkGoogle: "https://play.google.com/store/apps/details?id=com.awesome76",
       image: "/packing76.png",
       linkSource: "https://github.com/DamianIanni/76Packing",
-    },
-    {
-      name: "Packing 76 Server",
-      summary:
-        "Backend server for the Packing 76 mobile app — GraphQL API + MySQL + Node.js + TypeScript",
-      image: "/LOGO.png",
-      linkSource: "https://github.com/DamianIanni/76Packing_server",
     },
     {
       name: "GluckoTrack",
@@ -141,6 +134,20 @@ export const SITE_CONTENT: SiteContent = {
       linkGoogle:
         "https://play.google.com/store/apps/details?id=project.mayoromenor",
       image: "/mayoromenor.png",
+    },
+    {
+      name: "Packing 76 Server",
+      summary:
+        "Backend server for the Packing 76 mobile app — GraphQL API + MySQL + Node.js + TypeScript",
+      image: "/LOGO.png",
+      linkSource: "https://github.com/DamianIanni/76Packing_server",
+    },
+    {
+      name: "Habit tracker API",
+      summary:
+        "A robust backend API for a habit tracking application, designed to manage users, habits, and daily habit logs.",
+      image: "/habit_tracker.png",
+      linkSource: "https://github.com/DamianIanni/habit-tracker-api",
     },
   ],
   about: {
