@@ -29,7 +29,7 @@ export const SITE_CONFIG: SiteConfig = {
 export const SITE_CONTENT: SiteContent = {
   hero: {
     name: "Damian Ianni",
-    specialty: "Mobile Developer expanding into Fullstack Development",
+    specialty: "Mobile Developer & Fullstack Development",
     summary:
       "Building cross-platform apps and backend services while continuously growing as a fullstack developer.",
     email: "damiangussi@gmail.com",
@@ -134,6 +134,14 @@ export const SITE_CONTENT: SiteContent = {
       linkGoogle:
         "https://play.google.com/store/apps/details?id=project.mayoromenor",
       image: "/mayoromenor.png",
+    },
+    {
+      name: "CRM",
+      summary:
+        "The project simulates real-world functionality including authentication, patient management, and role-based access control.",
+      image: "/CRM.png",
+      linkSource: "https://github.com/DamianIanni/tech-case",
+      linkPreview: "https://tech-case-xbk8.vercel.app/",
     },
     {
       name: "Packing 76 Server",
